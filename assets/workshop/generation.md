@@ -1,8 +1,12 @@
-# 工坊封面来源
+# 工坊封面来源 / Workshop cover provenance
 
-由用户授权，使用内置 imagegen 工具生成。原始图片保留为 `cover-original.png`；`preview.png` 仅按游戏上传约束缩小为 512×512 PNG，画面内容未改。没有使用第三方游戏美术。
+当前仓库预览 [preview.png](preview.png) 来自[第三版封面](generation-gameplay-v3.md)：在[第二版游戏场景风格生成图](generation-gameplay-v2.md)上增加腐烂苹果 → 新鲜苹果图示。所有版本均通过 imagegen 生成或编辑，**不是实机截图**。
 
-生成提示词：
+The current repository preview uses [version 3](generation-gameplay-v3.md), edited from [version 2](generation-gameplay-v2.md) with a rotten-to-fresh apple illustration. All versions are AI-generated artwork, **not actual gameplay screenshots**.
+
+## 第一版存档 / Original cover archive
+
+第一版保留为 [cover-original.png](cover-original.png)，供来源追溯；没有使用第三方游戏美术。以下为其原始生成提示词。
 
 ```text
 Use case: ads-marketing
