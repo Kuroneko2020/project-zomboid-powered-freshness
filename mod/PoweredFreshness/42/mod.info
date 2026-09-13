@@ -1,0 +1,11 @@
+name=冰箱返鲜 / Powered Freshness
+id=PoweredFreshness
+description=Powered refrigerators and freezers gradually restore food freshness at the sandbox room-temperature spoilage rate. Requires the Java companion on both server and clients. 通电冰箱与冰柜按沙盒常温腐败速度逐渐返鲜，支持单人及服务器统一计算的多人模式。
+versionMin=42.20
+versionMax=42.20
+require=\ZombieBuddy
+javaJarFile=media/java/PoweredFreshness.jar
+javaPkgName=dev.poweredfreshness
+ZBVersionMin=2.3.2
+ZBVersionMax=2.3.2
+author=AI-generated with user direction

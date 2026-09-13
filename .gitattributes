@@ -1,0 +1,2 @@
+# JAR manifests intentionally terminate the main section with an empty line.
+*.mf whitespace=-blank-at-eof

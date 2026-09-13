@@ -1,0 +1,10 @@
+/build/
+/dist/
+/test-runtime/
+/local.properties
+*.class
+**/.classes/
+*.jar
+*.dll
+*.zip
+*.log

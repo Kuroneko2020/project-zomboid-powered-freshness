@@ -1,0 +1,5 @@
+Manifest-Version: 1.0
+Premain-Class: dev.poweredfreshness.instrument.InstrumentationTest
+Can-Retransform-Classes: true
+Can-Redefine-Classes: true
+
