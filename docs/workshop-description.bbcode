@@ -1,0 +1,72 @@
+[h1]冰箱返鲜 / Powered Freshness[/h1]
+把仍然存在的易腐食品放进通电冰箱或冰柜，让它随游戏时间逐渐恢复：[b]变质 → 陈腐 → 新鲜[/b]。
+
+[h2]功能[/h2]
+[list]
+[*]按沙盒设定的常温腐败速度返鲜；冷藏与冷冻返鲜等速。
+[*]恢复为新鲜后仍会继续恢复，直到腐败值归零。冰箱里的背包也会检查。
+[*]断电或取出后恢复原版食物处理。暂停和关闭游戏不会累计现实时间返鲜。
+[*]保留温度、冻结、生熟和固有毒性。焦糊或有毒食品不会因此变得安全。
+[*]只作用于游戏识别为冰箱或冰柜的容器；不会重建已删除、转化或吃掉的食物。
+[/list]
+
+[h2]版本与前置[/h2]
+[b]本版本：0.1.0。精确目标：Project Zomboid 42.20.4 + ZombieBuddy 2.3.2。[/b]
+其他版本未经本项目验证；游戏版本不符时本 Mod 会停用。
+
+[url=https://steamcommunity.com/sharedfiles/filedetails/?id=3619862853]ZombieBuddy 前置工坊页面[/url]
+[b]订阅前置后仍需安装作者的 Java loader，仅订阅不会完成 Java 接入。[/b]
+[url=https://github.com/zed-0xff/ZombieBuddy/blob/master/doc/Installation.md]ZombieBuddy 作者安装说明[/url] | [url=https://github.com/zed-0xff/ZombieBuddy/releases/tag/windows_installer]Windows 作者安装器[/url]
+
+[h2]Windows 安装与启用[/h2]
+[olist]
+[*]订阅本 Mod 和 ZombieBuddy，等待 Steam 下载完成。
+[*]打开上方 Windows 作者安装器链接，下载并运行 [b]ZombieBuddyInstaller.exe[/b]，选择 [b]Install or update ZombieBuddy[/b]（安装或更新）。
+[*]选择 [b]Both[/b]，为常规启动和备用启动都安装接入；也可仅选择自己实际使用的启动方式。
+[*]检查安装器列出的修改预览，确认无误后继续。如果安装器需要修改 Steam 启动项，按它当时的提示退出 Steam；无需为其他步骤提前退出 Steam。
+[*]启动游戏，检查主菜单左上角是否显示 [b]ZombieBuddy v2.3.2 loaded[/b]。没有该提示或版本不同，请先核对前置安装；本 Mod 精确要求 2.3.2。
+[*]单人：启用 ZombieBuddy 和 PoweredFreshness；已有存档还需在该存档的 Mod 管理中启用。
+[*]房主：在服务器管理中加入两项工坊内容和两个 Mod。房主客户端和房主启动的服务器都必须加载 Java loader，请分别检查日志。
+[*]独立服务器：部署相同版本的两项 Mod，并为服务器自己的 Java 启动过程安装 loader。客户端安装器完成不代表服务器也完成；按前置作者文档配置服务器环境。
+[*]每位客户端：同样完成前置 Java 接入，并使用与服务器相同的 Mod 版本。加入房间下载工坊内容不能代替这一步。
+[*]首次遇到本 Mod 的 Java JAR 或其更新时，按 ZombieBuddy 正常审批流程核对 Mod 名称及 SHA-256 后批准，可选择仅本次会话或保存决定。服务器也需完成它自己的审批；无需全局放行所有 JAR。
+[/olist]
+Mod ID：[b]PoweredFreshness[/b]；前置 Mod ID：[b]ZombieBuddy[/b]。
+加载后，日志应出现 [b][PoweredFreshness] Active; authority=true[/b]（单人或服务器）；多人客户端为 [b]authority=false[/b]。出现 DISABLED 或缺少 Java 扩展时，返鲜没有启用。
+
+[h2]多人及兼容边界[/h2]
+已实现服务器计算、客户端同步，适用于单人、房主和独立服务器的部署方式。[b]已通过自动测试、真实游戏类受控测试及隔离服务器加载验证；尚未完成真实双客户端联机和用户实机验收。[/b]
+物品移动、重新连接或刚打开容器时可能短暂显示旧状态。原版远处发电机的返鲜结算会等待游戏完成供电相关补算；第三方电源只采用已加载期间观察到的供电时间，不保证其离线燃料模型兼容。
+
+[h1]English[/h1]
+Powered fridges/freezers reverse food age at the sandbox room-temperature rate: [b]rotten → stale → fresh[/b], down to zero. Bags inside also work. Losing power or removing food stops recovery. Cooling/freezing do not slow it; cooking, temperature and poison remain unchanged. Deleted food cannot return. Uses game time, not real time while closed.
+
+[h2]Requirements and Windows setup[/h2]
+[b]Version 0.1.0 targets Project Zomboid 42.20.4 and ZombieBuddy 2.3.2 exactly.[/b] Other versions are unverified; a different game version disables this mod.
+
+Subscribe to this item and [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3619862853]ZombieBuddy[/url], then wait for Steam to finish downloading. [b]Subscription alone does not install the Java loader.[/b]
+
+[olist]
+[*]Open the [url=https://github.com/zed-0xff/ZombieBuddy/releases/tag/windows_installer]author's Windows installer page[/url], download and run [b]ZombieBuddyInstaller.exe[/b], then choose [b]Install or update ZombieBuddy[/b].
+[*]Choose [b]Both[/b] for Normal and Alternate Launch, or select only the launch mode you use.
+[*]Review the proposed changes and confirm. Close Steam if the installer requests it when changing Steam launch options; other steps do not require closing Steam in advance.
+[*]Start the game and look for [b]ZombieBuddy v2.3.2 loaded[/b] in the top-left of the main menu. If missing or a different version is shown, resolve the prerequisite installation first: this mod requires 2.3.2 exactly.
+[/olist]
+[url=https://github.com/zed-0xff/ZombieBuddy/blob/master/doc/Installation.md]Author's installation guide and manual installation alternative[/url]
+
+[list]
+[*]Single-player: enable both mods, including in an existing save's mod settings.
+[*]Hosting: add both Workshop items and mods to the server. Check loader activation separately in the host client and server logs.
+[*]Dedicated server: deploy matching mods and install the loader for the server's own Java launch environment.
+[*]Every client needs the same versions and a working Java loader. Downloading Workshop content when joining is insufficient.
+[*]Approve this mod's new or changed JAR through ZombieBuddy's normal prompt after checking its identity and SHA-256. Session-only approval is available. Complete server approval separately; do not enable blanket approval.
+[/list]
+Mod IDs: [b]PoweredFreshness[/b] and [b]ZombieBuddy[/b]. Successful activation logs [b][PoweredFreshness] Active; authority=true[/b] on the server or in single-player, and [b]authority=false[/b] on multiplayer clients. DISABLED or a missing Java extension means recovery is inactive.
+
+[h2]Validation and limitations[/h2]
+Server recovery and client sync passed automated and controlled game-class tests; isolated server loading passed. [b]Real two-client playtesting remains pending.[/b] Brief stale displays may occur during item moves or reconnects. Unloaded vanilla generators wait for game accounting; third-party power only supports observed loaded time.
+
+[h2]源码、许可与 AI / Source, license and AI[/h2]
+[url=https://github.com/Kuroneko2020/project-zomboid-powered-freshness]GitHub：公开源码、构建说明与验证范围 / Public source, build instructions and validation scope[/url]
+代码、测试、文档及工坊封面均由 AI 根据用户要求生成。项目以 [b]MIT[/b] 许可证开放；游戏与 ZombieBuddy 归各自权利人所有，不随本 Mod 分发。
+AI-generated code, tests, docs and cover, under user direction. [b]MIT[/b]. Game and ZombieBuddy files are not bundled and retain their own terms.
